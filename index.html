@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Pokemon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- Inicio do Main -->
+    <main>
+        <div class="container">
+            <!-- Inicio do titulo contendo imagens e o titulo -->
+            <div class="title">
+                <img src="./assets/unnamed.png" alt="Imagem de uma Pokebola" class="pokebola">
+                <h2>Pokegear Sprites</h2>
+                <img src="./assets/unnamed.png" alt="Imagem de uma Pokebola" class="pokebola">
+            </div>
+            <form>
+                <!-- Input de pesquisa de Pokemons -->
+                <div class="input-group">
+                    <input id="inputSearch" type="text" class="form-control" placeholder="Escreva o Nome de Um Pokemon">
+                    <div class="input-group-btn">
+                        <button id="btnSearch" class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!-- DropDown Select de escolha de pokemons -->
+            <p>Selecione Um Pokemon:</p>
+            <form>
+                <div class="form-group">
+                    <label for="sel1">Pokemon</label>
+                    <select class="form-control" id="sel1">
+                    </select>
+                    <div class="next-preview-btn">
+                        <button type="button" class="btn btn-info" id="btnPreview">Preview</button>
+                        <button type="button" class="btn btn-info" id="btnNext">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Secção onde se encontra dados do pokemon escolhida -->
+        <section class="pokemon">
+            <div id="sprite-photo">
+
+            </div>
+            <div id="official_artwork">
+
+            </div>
+            <div id="progress">
+            </div>
+
+        </section>
+    </main>
+    <script src="./fetch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
